@@ -8,13 +8,14 @@
     <title>Profile</title>
     <style>
         body {
-            margin: 0 300px;
+            margin: 0 250px;
             padding-top: 20px;
             background-image: url('background.jpg');
         }
         
         ul {
             border: 1px solid white;
+            padding-left: 20px;
             background-color: green;
         }
         
@@ -32,27 +33,27 @@
         }
         
         .header {
-            width: 95%;
+            width: 100%;
             border: 1px solid white;
             border-left-color: green;
-            border-right-color: green;
-            border-bottom-left-radius: 5px;
-            border-top-left-radius: 5px;
             border-bottom-right-radius: 5px;
             border-top-right-radius: 5px;
             border-left-width: 10px;
-            border-right-width: 10px;
             padding: 15px;
-            color: white;
+            color: wheat;
         }
         
         .header img {
             float: left;
         }
         
+        .skills .pro {
+            float: left;
+        }
+        
         .header h1 {
             padding-left: 300px;
-            color: white;
+            color: wheat;
         }
         
         table,
@@ -61,7 +62,8 @@
             border: 1px solid white;
             border-collapse: collapse;
             padding: 10px;
-            color: white;
+            text-align: center;
+            color: wheat;
         }
         
         th {
@@ -71,6 +73,23 @@
         a {
             text-decoration: none;
             text-align: center;
+        }
+        
+        .column {
+            float: left;
+            width: 45%;
+            padding: 8px;
+            height: 100px;
+        }
+        
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        .skill_rate li {
+            display: inline;
         }
     </style>
 </head>
@@ -89,7 +108,7 @@
     <ul>
         <li><a href="about.html">About</a> </li>
         <li> <a href="education.html">Education</a> </li>
-        <li> <a href="skills.html"> Skills</a> </li>
+        <li> <a href="skills.html">Skills</a> </li>
         <li> <a href="work.html">Works</a> </li>
         <li> <a href="service.html">Services</a> </li>
         <li style="border:none;"> <a href="contact.html">Contact</a> </li>
@@ -97,42 +116,44 @@
     </ul>
 
 
-    <table style="width: 100%;">
-        <tr>
-            <th style="width: 40%;">Name</th>
-            <td style="width: 40%;">Mizanur Rahman</td>
-        </tr>
-        <tr>
-            <th>Father Name</th>
-            <td>Abdur Rahim</td>
-        </tr>
-        <tr>
-            <th style="width: 40%;">Mother Name</th>
-            <td style="width: 40%;">Amina Begum</td>
-        </tr>
-        <tr>
-            <th>Birth Date</th>
-            <td>23/11/94</td>
-        </tr>
-        <tr>
-            <th style="width: 40%;">District</th>
-            <td style="width: 40%;">Tangail</td>
-        </tr>
-        <tr>
-            <th>Present Address</th>
-            <td>House No:390/1,South Paikpara, Alamin Road, Dhaka-1216</td>
-        </tr>
+    <div class="row">
+        <div class="column" style="background-color:#aaa; margin-right: 40px;">
+            <h2>PHP WEB DEVELOPMENT</h2>
+            <p>3 years, <span style="color: red;">5 projects</span></p>
+            <ul class="skill_rate">
+                <li><span style="background-color: red;width: 10px; height: 10px;"></span></li>
+                <li><span></span></li>
+                <li><span></span></li>
+                <li><span></span></li>
+                <li><span></span></li>
+                <li><span></span></li>
+            </ul>
 
-    </table>
+        </div>
+        <div class="column" style="background-color:#aaa;">
+            <h2>PHP WEB DEVELOPMENT</h2>
+            <p>3 years, <span style="color: red;">5 projects</span></p>
+
+        </div>
+
+    </div>
 
 
+    <div class="row" style="margin-top: 20px;">
+        <div class="column" style="background-color:#aaa; margin-right: 40px;">
+            <h2>PHP WEB DEVELOPMENT</h2>
+            <p>3 years, <span style="color: red;">5 projects</span></p>
 
 
 
+        </div>
+        <div class="column" style="background-color:#aaa;">
+            <h2>PHP WEB DEVELOPMENT</h2>
+            <p>3 years, <span style="color: red;">5 projects</span></p>
 
+        </div>
 
-
-
+    </div>
 
 
 </body>

@@ -16,6 +16,7 @@
         ul {
             border: 1px solid white;
             padding-left: 20px;
+            margin-left: 20px;
             background-color: green;
         }
         
@@ -78,8 +79,15 @@
         .column {
             float: left;
             width: 45%;
-            padding: 8px;
-            height: 130px;
+            padding-top: 40px;
+            padding-bottom: 20px;
+            height: 160px;
+            margin-left: 10px;
+            text-align: center;
+            border-top-left-radius: 6px;
+            border-bottom-left-radius: 6px;
+            border-top-right-radius: 6px;
+            border-bottom-right-radius: 6px;
         }
         
         .row:after {
@@ -99,6 +107,8 @@
             border-bottom-right-radius: 3px;
         }
     </style>
+
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -124,34 +134,18 @@
 
 
     <div class="row">
-        <div class="column" style="background-color:#aaa; margin-right: 40px;">
+        <div class="column project1" onmouseover="changebackground(this)" onmouseout="changeprevious(this)" style="background-image:url('pro1.jpg'); margin-right: 40px;">
             <h2>WORDPRESS</h2>
             <p>3 years, <span style="color: red;">5 projects</span></p>
 
-            <div class="skill" style="background-color: greenyellow;"></div>
-            <div class="skill" style="background-color: greenyellow;"></div>
-            <div class="skill" style="background-color: greenyellow;"></div>
-            <div class="project" style="background-color: red;"></div>
-            <div class="skill" style="background-color: red;"></div>
-            <div class="skill" style="background-color: red;"></div>
-            <div class="skill" style="background-color: red;"></div>
-            <div class="skill" style="background-color: red;"></div>
-            <div class="skill" style="background-color: red;"></div>
+
 
         </div>
-        <div class="column" style="background-color:#aaa;">
+        <div class="column" onmouseover="changebackground(this)" onmouseout="changeprevious(this)" style="background-image:url('pro2.jpg');">
             <h2>REACT</h2>
             <p>3 years, <span style="color: red;">5 projects</span></p>
 
-            <div class="skill" style="background-color: greenyellow;"></div>
-            <div class="skill" style="background-color: greenyellow;"></div>
-            <div class="skill" style="background-color: greenyellow;"></div>
-            <div class="project" style="background-color: red;"></div>
-            <div class="skill" style="background-color: red;"></div>
-            <div class="skill" style="background-color: red;"></div>
-            <div class="skill" style="background-color: red;"></div>
-            <div class="skill" style="background-color: red;"></div>
-            <div class="skill" style="background-color: red;"></div>
+
 
         </div>
 
@@ -159,36 +153,18 @@
 
 
     <div class="row" style="margin-top: 20px;">
-        <div class="column" style="background-color:#aaa; margin-right: 40px;">
+        <div class="column" onmouseover="changebackground(this)" onmouseout="changeprevious(this)" style="background-image:url('pro1.jpg'); margin-right: 40px;">
             <h2>PHP</h2>
             <p>3 years, <span style="color: red;">5 projects</span></p>
 
-            <div class="skill" style="background-color: greenyellow;"></div>
-            <div class="skill" style="background-color: greenyellow;"></div>
-            <div class="skill" style="background-color: greenyellow;"></div>
-            <div class="project" style="background-color: red;"></div>
-            <div class="skill" style="background-color: red;"></div>
-            <div class="skill" style="background-color: red;"></div>
-            <div class="skill" style="background-color: red;"></div>
-            <div class="skill" style="background-color: red;"></div>
-            <div class="skill" style="background-color: red;"></div>
 
 
 
         </div>
-        <div class="column" style="background-color:#aaa;">
+        <div class="column" onmouseover="changebackground(this)" onmouseout="changeprevious(this)" style="background-image:url('pro2.jpg'); margin-bottom: 50px;">
             <h2>PYTHON</h2>
             <p>3 years, <span style="color: red;">5 projects</span></p>
 
-            <div class="skill" style="background-color: greenyellow;"></div>
-            <div class="skill" style="background-color: greenyellow;"></div>
-            <div class="skill" style="background-color: greenyellow;"></div>
-            <div class="project" style="background-color: red;"></div>
-            <div class="skill" style="background-color: red;"></div>
-            <div class="skill" style="background-color: red;"></div>
-            <div class="skill" style="background-color: red;"></div>
-            <div class="skill" style="background-color: red;"></div>
-            <div class="skill" style="background-color: red;"></div>
 
         </div>
 

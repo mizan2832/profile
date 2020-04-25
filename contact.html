@@ -16,7 +16,6 @@
         ul {
             border: 1px solid white;
             padding-left: 20px;
-            margin-left: 20px;
             background-color: green;
         }
         
@@ -79,15 +78,21 @@
         .column {
             float: left;
             width: 45%;
-            padding-top: 40px;
-            padding-bottom: 20px;
-            height: 160px;
-            margin-left: 10px;
-            text-align: center;
-            border-top-left-radius: 6px;
-            border-bottom-left-radius: 6px;
-            border-top-right-radius: 6px;
-            border-bottom-right-radius: 6px;
+            padding: 8px;
+            height: 130px;
+        }
+        
+        .sidebar {
+            float: left;
+            padding: 10px;
+            margin-bottom: 30px;
+            height: 475px;
+            background-color: #4E4E50;
+            margin-right: 30px;
+        }
+        
+        .name {
+            float: left;
         }
         
         .row:after {
@@ -107,14 +112,17 @@
             border-bottom-right-radius: 3px;
         }
     </style>
-    <script src="script.js"></script>
 </head>
 
 <body>
 
     <div class="header">
+
         <img src="mizan.gif" alt="">
+
         <h1>Mizanur Rahman <br> Full Stack Web Developer </h1><br>
+
+
     </div>
     </div>
     <ul>
@@ -124,28 +132,63 @@
         <li> <a href="work.html">Works</a> </li>
         <li> <a href="service.html">Services</a> </li>
         <li style="border:none;"> <a href="contact.html">Contact</a> </li>
+
     </ul>
 
-    <div class="row">
-        <div class="column project1" onmouseover="changebackground(this)" onmouseout="changeprevious(this)" style="background-image:url('pro1.jpg'); margin-right: 40px;">
-            <h2>WORDPRESS</h2>
-            <p>3 years, <span style="color: red;">5 projects</span></p>
+    <div class="contact" style="width: 100%; color: khaki;">
+        <div class="sidebar" style="width: 55%; margin-right: 40px;">
+            <h1>Contact Me</h1>
+            <p>Freelancers should pay attention to this contact form. <br>What Denise Chandler is doing with this contact form is not just asking people to contact her</p>
+            <div class="name" style="width:45%;background-color: grey; margin-right: 5%;">
+                <label for="name">Name:</label>
+                <input type="text" height="100px;">
+            </div>
+            <div class="name" style="width:45%;background-color: grey;">
+                <label for="name">Email:</label>
+                <input type="text" height="100px;">
+            </div>
+            <br>
+            <div class="message">
+                <p>Message:</p>
+                <textarea name="textarea" id="" cols="70" rows="13"></textarea>
+            </div>
+            <h3 style="float: right; background-color: red; color: white; padding-left: 30px; padding:10px 30px 10px 30px;">SEND</h3>
         </div>
-        <div class="column" onmouseover="changebackground(this)" onmouseout="changeprevious(this)" style="background-image:url('pro2.jpg');">
-            <h2>REACT</h2>
-            <p>3 years, <span style="color: red;">5 projects</span></p>
+        <div class="sidebar" style="width: 33%;">
+
+            <div style="line-height: 7%;">
+                <h3 style="color: red;">EMAIL</h3>
+                <p>mrahman5037@gmail.com</p>
+            </div>
+            <br><br>
+            <div style="line-height: 7%;">
+                <h3 style="color: red;">TELEPHONE</h3>
+                <p>+880-1515-612832</p>
+            </div>
+            <br><br>
+
+            <div style="line-height: 7%;">
+                <h3 style="color: red;">Skype</h3>
+                <p>mizan2832</p>
+            </div>
+            <br><br>
+
+            <div style="line-height: 7%;">
+                <h3 style="color: red;">Address</h3>
+                <p>Mirpur,alamin road</p>
+            </div>
+
+            <br>
+            <img src="facebook.png" width="100px" alt="facebook_twitter">
+
+
+
         </div>
     </div>
-    <div class="row" style="margin-top: 20px;">
-        <div class="column" onmouseover="changebackground(this)" onmouseout="changeprevious(this)" style="background-image:url('pro1.jpg'); margin-right: 40px;">
-            <h2>PHP</h2>
-            <p>3 years, <span style="color: red;">5 projects</span></p>
-        </div>
-        <div class="column" onmouseover="changebackground(this)" onmouseout="changeprevious(this)" style="background-image:url('pro2.jpg'); margin-bottom: 50px;">
-            <h2>PYTHON</h2>
-            <p>3 years, <span style="color: red;">5 projects</span></p>
-        </div>
-    </div>
+
+
+
+
 </body>
 
 </html>
